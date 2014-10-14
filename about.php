@@ -28,7 +28,7 @@
         <li><a href="http://localhost/songguard/form.php">Add Song</a></li>
         <li><a href="#">View All</a></li>
         <li><a href="#">View Random</a></li>
-        <li><a href="http://localhost/songguard/about.php">About Song Guard</a></li>
+        <li><a href="#">About Song Guard</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
