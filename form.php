@@ -27,7 +27,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Chords/Lyrics</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="textarea" name="textarea">You put your left leg in. (Drag to resize.)</textarea>
+    <textarea class="form-control" id="textarea" name="textarea">"You put your left leg in."</textarea>
   </div>
 </div>
 
@@ -47,7 +47,7 @@
 </div>
 
 
-<!-- Multiple Radios (inline) -->
+<!-- Multiple Radios performance ready? (inline) -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="radios">Performance Ready?</label>
   <div class="col-md-4">
@@ -62,15 +62,15 @@
   </div>
 </div>
 
-<!-- Textarea -->
+<!-- Textarea   addtional notes -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Additional Notes</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="textarea" name="textarea">Add your performance notes here. (Drag to resize.)</textarea>
+    <textarea class="form-control" id="textarea" name="textarea">These text boxes can be resized from the lower right corner.</textarea>
   </div>
 </div>
 
-<!-- Button (Double) -->
+<!-- Button (Double)   (Ready to submit?) -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="button1id">Finished?</label>
   <div class="col-md-8">
