@@ -10,7 +10,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Song Title</label>
   <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="Enter song title here" class="form-control input-md" required="">
+  <input id="textinput" name="song_title" type="text" placeholder="Enter song title here" class="form-control input-md" required="">
   </div>
 </div>
 
@@ -18,7 +18,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Artist</label>
   <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="Enter artist here." class="form-control input-md" required="">
+  <input id="textinput" name="artist" type="text" placeholder="Enter artist here." class="form-control input-md" required="">
   </div>
 </div>
 
@@ -27,12 +27,12 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Chords/Lyrics</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="textarea" name="textarea">"You put your left leg in."</textarea>
+    <textarea class="form-control" id="textarea" name="lyrics">"You put your left leg in."</textarea>
   </div>
 </div>
 
 <!-- Multiple Radios Did you write that?(inline) -->
-<div class="form-group">
+<!-- <div class="form-group">
   <label class="col-md-4 control-label" for="radios">Did you write that?</label>
   <div class="col-md-4">
     <label class="radio-inline" for="radios-0">
@@ -44,11 +44,11 @@
       Cover
     </label>
   </div>
-</div>
+</div> -->
 
 
 <!-- Multiple Radios performance ready? (inline) -->
-<div class="form-group">
+<!-- <div class="form-group">
   <label class="col-md-4 control-label" for="radios">Performance Ready?</label>
   <div class="col-md-4">
     <label class="radio-inline" for="radios-0">
@@ -60,13 +60,13 @@
       Yes
     </label>
   </div>
-</div>
+</div> -->
 
 <!-- Textarea   addtional notes -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Additional Notes</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="textarea" name="textarea">These text boxes can be resized from the lower right corner.</textarea>
+    <textarea class="form-control" id="textarea" name="notes">These text boxes can be resized from the lower right corner.</textarea>
   </div>
 </div>
 
@@ -74,7 +74,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="button1id">Finished?</label>
   <div class="col-md-8">
-    <button id="button1id" name="button1id" class="btn btn-success">Save</button>
+     <button id="button1id" name="button1id" input type="submit"  class="btn btn-success">Save</button>
     <button id="button2id" name="button2id" class="btn btn-danger">Discard</button>
   </div>
 </div>
