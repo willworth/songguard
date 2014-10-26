@@ -1,12 +1,12 @@
 <?php require_once("includes/functions.php"); ?>
 <?php include("includes/header.php"); ?>
-<form class="form-horizontal">
+<form action="add.php" method=post class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
 <legend>Add song to Song Guard</legend>
 
-<!-- Text input-->
+<!-- Song Title Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Song Title</label>
   <div class="col-md-5">
@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<!-- Text input-->
+<!-- Artist Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Artist</label>
   <div class="col-md-5">
@@ -23,7 +23,7 @@
 </div>
 
 
-<!-- Textarea -->
+<!-- Chords/Lyrics Textarea -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Chords/Lyrics</label>
   <div class="col-md-4">
@@ -31,7 +31,7 @@
   </div>
 </div>
 
-<!-- Multiple Radios (inline) -->
+<!-- Multiple Radios Did you write that?(inline) -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="radios">Did you write that?</label>
   <div class="col-md-4">
