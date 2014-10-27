@@ -10,7 +10,7 @@ $notes =$_POST['notes'];
 echo "Successfully received ", "{$song_title}</br>";
 echo "Successfully received ", "{$artist}</br>";
 echo "Successfully received ", "{$lyrics} </br>";
-echo "Successfully received ", "{$notes}</br>"; 
+echo "Successfully received ", "{$notes}</br>";
 ?>
 
 <?php
