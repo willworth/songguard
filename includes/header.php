@@ -29,7 +29,7 @@ require("connection.php");
       <ul class="nav navbar-nav">
         <!--<li class="active"><a href="#">Home</a></li>-->
         <li><a href="/songguard/form.php">Add Song</a></li>
-        <li><a href="#">View All</a></li>
+        <li><a href="/songguard/all.php">View All</a></li>
         <li><a href="#">View Artist List</a></li>
         <li><a href="#">View Random Song</a></li>
         <li><a href="#">About Song Guard</a></li>
