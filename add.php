@@ -2,10 +2,10 @@
 <?php include("includes/header.php"); ?>
 
 <?php
-$song_title =$_POST['song_title'];
-$artist =$_POST['artist'];
-$lyrics =$_POST['lyrics'];
-$notes =$_POST['notes'];
+$song_title = prep_mysql($_POST['song_title']);// prep_msql is validation- see functions.php
+$artist =prep_mysql($_POST['artist']);
+$lyrics =prep_mysql($_POST['lyrics']);
+$notes =prep_mysql($_POST['notes']);
 //echo "Hello world!<br>";
 echo "Successfully received ", "{$song_title}</br>";
 echo "Successfully received ", "{$artist}</br>";
@@ -15,9 +15,9 @@ echo "Successfully received ", "{$notes}</br>";
 
 <?php
 	$query = "INSERT INTO songs (
-				song_title, artist, lyrics, notes,
+				song_title, artist, lyrics, notes
 			) VALUES (
-				'{$song_title}', '{$artist}', '{$lyrics}', '{$notes}',
+				'{$song_title}', '{$artist}', '{$lyrics}', '{$notes}'
 			)";
             if (mysqli_query($connection, $query)) {
     echo "New record created successfully";
