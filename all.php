@@ -6,6 +6,57 @@
 // This page is just to display everything in the db
 ?>
 
-To be added!
+<?php
+$mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+$result = $mysqli->query("SELECT id, song_title, artist FROM `songs`");
 
+while ($row = $result->fetch_assoc()) {
+        echo $row['song_title']."<br>";
+        echo $row['artist']."<br>";
+    }
+?>
+<!--
+
+
+
+<?php
+
+// $res = mysqli_query($connection,"SELECT id, song_title, artist FROM `songs`");
+//
+// if($res === FALSE) {
+//     echo "boo!";
+//     die(mysql_error()); // TODO: better error handling
+// }
+//
+// $sql = "SELECT id, song_title, artist FROM `songs`";
+// $result = mysqli_query($connection, $sql);
+//
+// if (mysqli_num_rows($result) > 0) {
+//     // output data of each row
+//     while($row = mysqli_fetch_assoc($result)) {
+//         echo "id: " . $row["id"]. " - Name: " . $row["song_title"]. " " . $row["artist"]. "<br>";
+//     }
+// } else {
+//     echo "0 results";
+// } --> -->
+// if (!$mysqli_query) {
+//         echo 'MySQL Error: ' . mysqli_error();
+//         exit;
+//     }
+// $row = mysqli_fetch_assoc($res);
+// echo $row['_msg'];
+//
+// if ($res->num_rows > 0) {
+//     // output data of each row
+//     while($row = $res->fetch_assoc()) {
+//         echo "id: " . $row["id"]. " - Name: " . $row["song_title"]. " " . $row["artist"]. "<br>";
+//     }
+// } else {
+//     echo "0 results";
+// }
+// ?>
+//
+// ?>
+//
+// //"id: " . $row["id"].
 <?php require("includes/footer.php"); ?>
