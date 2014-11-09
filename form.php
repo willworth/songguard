@@ -27,7 +27,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Chords/Lyrics</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="textarea" name="lyrics">"You put your left leg in."</textarea>
+    <textarea class="form-control" id="textarea" placeholder="You put your left leg in..." name="lyrics"></textarea>
   </div>
 </div>
 
@@ -66,7 +66,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Additional Notes</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="textarea" name="notes">These text boxes can be resized from the lower right corner.</textarea>
+    <textarea class="form-control" id="textarea" placeholder="These text boxes can be resized from the lower right corner." name="notes"></textarea>
   </div>
 </div>
 
