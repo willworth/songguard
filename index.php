@@ -15,8 +15,8 @@
           <p><a href="/songguard/form.php" class="btn btn-lg btn-primary">Add your first song!</a></p>
         </div>
         <div class="col-md-4">
-          <p class=lead>Seemless integration with <a href="https://soundcloud.com/">Soundcloud</a>
-         allows you to store and access your audio.</p>
+          <p class=lead>Song Guard is <a href="https://github.com/willworth/songguard">open source</a>,
+         so you can host it on your local machine, self-hosted wordpress site(or whatever), and tweak it as you please.</p>
         </div>
       </div>
     </div>

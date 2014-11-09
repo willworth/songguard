@@ -7,17 +7,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <p>Song Guard is designed to store your lyrics, notes, and musical ideas.</p>
+          <p>Song Guard is built and shared by <a href="http://willworth.co.uk">Will Worth.</a>
+          All bug reports, feature suggestions, and comments gratefully received.</p>
         </div>
         <div class="col-md-4">
+            <p>Song Guard is designed to store your lyrics, notes, and musical ideas.</p>
           <p>Organise your original material with supporting notes, as well as all
           those covers you´ve been trying to keep track of.</p>
-          <p><a href="#" class="btn btn-lg btn-primary">Begin</a></p>
+          
         </div>
         <div class="col-md-4">
-          <p>Seemless integration with <a href="https://soundcloud.com/">Soundcloud</a>
-         allows you to store and access your audio.</p>
-        </div>
+          <p class=lead>Song Guard is <a href="https://github.com/willworth/songguard">open source</a>,
+         so you can host it on your local machine, self-hosted wordpress site(or whatever), and tweak it as you please.</p></div>
       </div>
     </div>
 </div>

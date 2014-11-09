@@ -13,6 +13,23 @@ require("connection.php");
     built using tutorials from http://www.w3schools.com/bootstrap/default.asp
         and https://developers.soundcloud.com/docs/api/guide
   -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <html lang="en">
+
+
+     <!-- <link href="signin.css" rel="stylesheet">  Custom styles for this template  -->
+
+      <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -33,12 +50,12 @@ require("connection.php");
         <li><a href="/songguard/all.php">View All</a></li>
         <li><a href="#">View Artist List</a></li>
         <li><a href="/songguard/randomsong.php">View Random Song</a></li>
-        <li><a href="#">About Song Guard</a></li>
+        <li><a href="/songguard/about.php">About Song Guard</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+        <li><a href="/songguard/signup.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="/songguard/signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        </ul>
     </div>
   </div>
 </nav>
