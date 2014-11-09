@@ -6,15 +6,57 @@
 // This page is just to display everything in the db
 ?>
 
-<?php
-$mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
-$result = $mysqli->query("SELECT id, song_title, artist FROM `songs`");
-
-while ($row = $result->fetch_assoc()) {
-        echo $row['song_title']."<br>";
-        echo $row['artist']."<br>";
-    }
+<?php //working code
+// $mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+// $result = $mysqli->query("SELECT id, song_title, artist FROM `songs`");
+//
+// while ($row = $result->fetch_assoc()) {
+//         echo $row['song_title']."<br>";
+//         echo $row['artist']."<br>";
+//     }
+//working code
 ?>
+
+
+<!--table table-striped, tablebordered, table-hover, table-condensed,
+class="table-striped col-md-6",
+!-->
+
+
+<table table id="example" class="table table-striped table-bordered table-condensed" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <td>Song</td>
+                <td>Artist</td>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+            $mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+            if (!$mysqli) {
+                die(mysql_error());
+            }
+
+            $result = $mysqli->query("SELECT id, song_title, artist FROM `songs`");
+            while($row = $result->fetch_assoc()) {
+            ?>
+                <tr>
+                    <td><?php echo $row['song_title']?></td>
+                    <td><?php echo $row['artist']?></td>
+                </tr>
+
+            <?php
+            }
+            ?>
+            </tbody>
+            </table>
+    </body>
+</html>
+
+
+
+
+
 <!--
 
 
@@ -58,5 +100,5 @@ while ($row = $result->fetch_assoc()) {
 //
 // ?>
 //
-// //"id: " . $row["id"].
+// //"id: " . $row["id"]. -->
 <?php require("includes/footer.php"); ?>

@@ -7,10 +7,11 @@ require("connection.php");
   <title>Song Guard</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <!--<link rel="stylesheet" type="text/css" href="includes/style.css"> -->
-  <!--  built using tutorials from http://www.w3schools.com/bootstrap/default.asp
-                            and https://developers.soundcloud.com/docs/api/guide
+ <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" >
+  <!--<link rel="stylesheet" type="text/css" href="includes/style.css">
+    built using tutorials from http://www.w3schools.com/bootstrap/default.asp
+        and https://developers.soundcloud.com/docs/api/guide
   -->
 </head>
 

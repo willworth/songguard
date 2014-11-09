@@ -1,4 +1,4 @@
-################CSS#################################3
+################CSS#################################
 body {
 color: navy;
 margin-left: 20px;
@@ -6,3 +6,7 @@ margin-left: 20px;
     font-size: 200%;
 background-color: lightblue;
 }
+
+table.db-table 		{ border-right:1px solid #ccc; border-bottom:1px solid #ccc; }
+table.db-table th	{ background:#eee; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+table.db-table td	{ padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
