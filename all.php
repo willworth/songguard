@@ -1,9 +1,14 @@
 <?php require_once("includes/functions.php"); ?>
 <?php include("includes/header.php"); ?>
-
-
 <?php
-// This page is just to display everything in the db
+/* This page is just to display everything in the db
+
+<input type="submit" name="id" value="A" />
+<input type="submit" name="foo" value="B" />
+...
+The value will be available by $_POST['foo'] (if the parent <form> has a method="post").
+
+*/
 ?>
 
 <?php //working code
@@ -22,7 +27,8 @@
 class="table-striped col-md-6",
 !-->
 
-
+<form action="song.php" method=post class="form-horizontal">
+<fieldset>
 <table table id="example" class="table table-striped table-bordered table-condensed" width="100%" cellspacing="0">
         <thead>
             <tr>
@@ -47,7 +53,8 @@ class="table-striped col-md-6",
                     <td><?php echo $row['song_title']?></td>
                     <td><?php echo $row['artist']?></td>
                     <td>
-                    <a href="#" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <button id="button1id"   class="btn btn-success">Save</button>
+                    <button id="button1id" class="btn btn-sm btn-success" input type="submit" name="id" value=$row['id']><span class="glyphicon glyphicon-eye-open"></span></button>
                     <a href="#" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-star"></span></a>
                     <a href="#" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span></a>
                     <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
@@ -59,6 +66,9 @@ class="table-striped col-md-6",
             ?>
             </tbody>
             </table>
+
+        </fieldset>
+            </form>
     </body>
 </html>
 

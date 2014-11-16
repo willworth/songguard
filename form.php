@@ -79,7 +79,7 @@
   </div>
 </div>
 
-</fieldset>
-</form>
+    </fieldset>
+    </form>
 
 <?php include("includes/footer.php"); ?>

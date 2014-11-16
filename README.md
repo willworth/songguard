@@ -8,6 +8,8 @@ will@willworth.co.uk
 
 
 TO DO
+
+Deprecated: mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future
 use github issues?
 Update sql validation to msqli standard
 
