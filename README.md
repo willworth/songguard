@@ -8,7 +8,7 @@ will@willworth.co.uk
 
 
 TO DO
-
+use github issues?
 Update sql validation to msqli standard
 
 add favourites functionality

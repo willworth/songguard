@@ -21,4 +21,21 @@
     </div>
 </div>
 
+<?php
+
+/*
+following is horrid, fast pseudo code!!!
+
+mt_rand(min,max);
+mt_rand(1,numberRowsInDbTable);
+
+if mt_rand (result) in ids in rows, return that song
+
+else loop
+
+
+*/
+
+
+
 <?php require("includes/footer.php"); ?>
