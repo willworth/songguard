@@ -26,8 +26,10 @@ class="table-striped col-md-6",
 <table table id="example" class="table table-striped table-bordered table-condensed" width="100%" cellspacing="0">
         <thead>
             <tr>
+                <td>Entry ID</td>
                 <td>Song</td>
                 <td>Artist</td>
+                <td>Options</td>
             </tr>
         </thead>
         <tbody>
@@ -41,8 +43,15 @@ class="table-striped col-md-6",
             while($row = $result->fetch_assoc()) {
             ?>
                 <tr>
+                    <td><?php echo $row['id']?></td>
                     <td><?php echo $row['song_title']?></td>
                     <td><?php echo $row['artist']?></td>
+                    <td>
+                    <a href="#" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-star"></span></a>
+                    <a href="#" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
+                    </td>
                 </tr>
 
             <?php
