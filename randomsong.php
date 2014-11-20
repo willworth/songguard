@@ -10,10 +10,13 @@
 
         </div>
         <div class="col-md-4">
+            <testinlinestyle style="text-align: center;">
+
           <p class=lead >This feature is coming soon, we promise!  Why not throw a dart at the
                <a href="/songguard/all.php">full list</a> for now?</p>
           <p><a href="/songguard/all.php" class="btn btn-lg btn-primary">View *all* the songs.</a></p>
         </div>
+    </testinlinestyle>
         <div class="col-md-4">
 
         </div>
@@ -22,7 +25,6 @@
 </div>
 
 <?php
-
 /*
 following is horrid, fast pseudo code!!!
 
@@ -38,4 +40,4 @@ else loop
 
 
 
-<?php require("includes/footer.php"); ?>
+ require("includes/footer.php"); ?>
