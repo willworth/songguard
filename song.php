@@ -10,10 +10,31 @@ echo $_POST['key'];
 */
 
 echo "Successfully received " . $_POST["id"] ;
-//echo "You have successfully arrived at the song page.  ID received is ", $_POST['wid'];
 
 
-// ID received is ", $_POST["id"];
-//$id
 
+    $mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+    if (!$mysqli) {
+        die(mysql_error());
+    }
+
+
+$result = $mysqli->query("SELECT * FROM `songs` WHERE `id` = 3");
+while($row = $result->fetch_assoc()) {
+?>
+        <td><?php $x =$row['id']; echo $x;?></td>
+        <td><?php echo $row['song_title']?></td>
+        <td><?php echo $row['artist']?></td>
+        <td><?php echo $row['lyrics']?></td>
+        <td>
+        <button id="button1id" class="btn btn-sm btn-success" input type="submit" name="id"  value =  ><span class="glyphicon glyphicon-eye-open"></span></button>
+        <a href="#" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-star"></span></a>
+        <a href="#" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
+        </td>
+    </tr>
+<?php
+}
+?>
+<?php
 require("includes/footer.php"); ?>
