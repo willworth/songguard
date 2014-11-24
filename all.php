@@ -52,7 +52,8 @@ class="table-striped col-md-6",
                     <td><?php echo $row['song_title']?></td>
                     <td><?php echo $row['artist']?></td>
                     <td>
-                    <button id="button1id" class="btn btn-sm btn-success" input type="submit" name="id"  value = {$row['id']} ><span class="glyphicon glyphicon-eye-open"></span></button>
+                        
+                    <button id="button1id" class="btn btn-sm btn-success" input type="submit" name="id"  value="{$row['id']}"  ><span class="glyphicon glyphicon-eye-open"></span></button>
                     <a href="#" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-star"></span></a>
                     <a href="#" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span></a>
                     <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span></a>

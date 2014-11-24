@@ -3,13 +3,16 @@
 <?php
 /* this page will dynamically generate a page to display a song clicked on in
 the all.php listings.
-$_POST['id']     {$song_title}
+//echo "Successfully received " . $_POST["id"] ;
 
-$_POST['key'] = "foo";
-echo $_POST['key'];
+as things stand, I´m just trying to pull one specific record, to organise the layout
+
+we can then work on choosing which file we want to display...
+
+
 */
 
-echo "Successfully received " . $_POST["id"] ;
+
 
 
 
