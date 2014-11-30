@@ -1,38 +1,12 @@
 <?php require_once("includes/functions.php"); ?>
 <?php include("includes/header.php"); ?>
-<?php
-/* This page is just to display everything in the db
 
-<input type="submit" name="id" value="A" />
-<input type="submit" name="foo" value="B" />
-...
-The value will be available by $_POST['foo'] (if the parent <form> has a method="post").
-
-*/
-?>
-
-<?php //working code
-// $mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
-// $result = $mysqli->query("SELECT id, song_title, artist FROM `songs`");
-//
-// while ($row = $result->fetch_assoc()) {
-//         echo $row['song_title']."<br>";
-//         echo $row['artist']."<br>";
-//     }
-//working code
-?>
-
-
-<!--table table-striped, tablebordered, table-hover, table-condensed,
-class="table-striped col-md-6",
-!-->
-
-<form action="song.php" method=post class="form-horizontal">
+<form action="song.php" method=get class="form-horizontal">
 <fieldset>
 <table table id="example" class="table table-striped table-hover table-bordered table-condensed" width="100%" cellspacing="0">
         <thead>
             <tr>
-                <td>Entry ID</td>
+                <!--<td>Entry ID</td>!-->
                 <td>Song</td>
                 <td>Artist</td>
                 <td>Options</td>
@@ -48,12 +22,12 @@ class="table-striped col-md-6",
             $result = $mysqli->query("SELECT id, song_title, artist FROM `songs`");
             while($row = $result->fetch_assoc()) {
             ?>
-                    <td><?php $x =$row['id']; echo $x;?></td>
+                    <!--<td><?php echo $row['id']?></td> !-->
                     <td><?php echo $row['song_title']?></td>
                     <td><?php echo $row['artist']?></td>
                     <td>
-
-                    <button id="button1id" class="btn btn-sm btn-success" input type="submit" name="id"  value="{$row['id']}"  ><span class="glyphicon glyphicon-eye-open"></span></button>
+<a href="song.php?id=<?php echo $row['id'] ?>">
+                    <button id="button1id" class="btn btn-sm btn-success" input type="submit" name="id"  value="{$row['id']}"  ><span class="glyphicon glyphicon-eye-open"></span></button></a>
                     <a href="#" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-star"></span></a>
                     <a href="#" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span></a>
                     <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-remove"></span></a>

@@ -22,7 +22,7 @@
                 die(mysql_error());
             }
 
-        $result = $mysqli->query("SELECT * FROM `songs` WHERE `id` = 48");
+        $result = $mysqli->query("SELECT * FROM `songs` WHERE `id` = 39");
             while($row = $result->fetch_assoc()) {
             ?>
                     <td><?php $x =$row['id']; echo $x;?></td>
@@ -45,3 +45,37 @@
 
 <?php
 require("includes/footer.php"); ?>
+
+
+
+
+
+    <div class="list-group">
+    <?php    $result = $mysqli->query("SELECT * FROM `songs` WHERE `id` = 39");
+            while($row = $result->fetch_assoc()) {
+ echo $row['song_title'];?>
+        <a href="#" class="list-group-item active">
+
+            <span class="glyphicon glyphicon-camera"><?php echo $row['song_title']?></span> title <span class="badge">25</span>
+
+        </a>
+
+        <a href="#" class="list-group-item">
+
+            <span class="glyphicon glyphicon-file"></span> Documents <span class="badge">145</span>
+
+        </a>
+
+        <a href="#" class="list-group-item">
+
+            <span class="glyphicon glyphicon-music"></span> Music <span class="badge">50</span>
+
+        </a>
+
+        <a href="#" class="list-group-item">
+
+            <span class="glyphicon glyphicon-film"></span> Videos <span class="badge">8</span>
+<?php } ?>
+        </a>
+
+    </div>

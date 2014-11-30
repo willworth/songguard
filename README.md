@@ -33,3 +33,5 @@ Display a specific song well.
 Search
 
 Filter results various ways
+
+<a href="detail.php?song-id=<?php echo $row['id'] ?>">Linkypoo</a>
