@@ -19,7 +19,7 @@
                 die(mysql_error());
             }
 
-            $result = $mysqli->query("SELECT id, song_title, artist FROM `songs`");
+            $result = $mysqli->query("SELECT id, song_title, artist FROM `songs` ORDER BY `songs`.`artist` ASC");
             while($row = $result->fetch_assoc()) {
             ?>
                     <!--<td><?php echo $row['id']?></td> !-->
