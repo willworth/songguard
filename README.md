@@ -9,6 +9,25 @@ will@willworth.co.uk
 
 TO DO
 
+Complete CRUD!
+Create done
+Read done
+Update?
+Delete?
+user accounts
+validation
+
+redirect for add page
+
+<form action='item.php' method='POST' id='form'>
+    <input type='hidden' name='action' value='delete' />
+    <input type='hidden' name='id' value='{item_id}' />
+    <a href="" onclick="document.getElementById('form').submit(); return false;">Delete item</a>
+</form>
+
+
+
+personalised stuff for the original material (ie songs)
 Deprecated: mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future
 use github issues?
 Update sql validation to msqli standard

@@ -8,9 +8,9 @@ $lyrics =prep_mysql($_POST['lyrics']);
 $notes =prep_mysql($_POST['notes']);
 //echo "Hello world!<br>";
 echo "Successfully received ", "{$song_title}</br>";
-echo "Successfully received ", "{$artist}</br>";
-echo "Successfully received ", "{$lyrics} </br>";
-echo "Successfully received ", "{$notes}</br>";
+//echo "Successfully received ", "{$artist}</br>";
+//echo "Successfully received ", "{$lyrics} </br>";
+//echo "Successfully received ", "{$notes}</br>";
 ?>
 
 <?php
@@ -37,6 +37,6 @@ echo "Successfully received ", "{$notes}</br>";
 	// 	echo "<p>Subject creation failed.</p>";
 	// 	echo "<p>" . mysql_error() . "</p>";
 	// }
-?>
-
+?></br></br></br></br>
+<a href="/songguard/all.php">Click here to go to the updated full list!</a>
 <?php require("includes/footer.php"); ?>
