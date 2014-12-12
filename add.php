@@ -37,6 +37,45 @@ echo "Successfully received ", "{$song_title}</br>";
 	// 	echo "<p>Subject creation failed.</p>";
 	// 	echo "<p>" . mysql_error() . "</p>";
 	// }
-?></br></br></br></br>
-<a href="/songguard/all.php">Click here to go to the updated full list!</a>
+?></br></br></br>
+
+
+
+
+<div class="jumbotron">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+		<p class=lead></p>
+		<p><a href="/songguard/index.php" class="btn btn-lg btn-warning">It worked!</a></p>
+		</div>
+		<div class="col-md-4">
+		<p class=lead></p>
+		<p><a href="/songguard/form.php" class="btn btn-lg btn-primary">Add another song!</a></p>
+		</div>
+		<div class="col-md-4">
+		<p class=lead></p>
+		<a href="/songguard/all.php" class="btn btn-lg btn-success">View full list!</a>
+		</p>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</br>
 <?php require("includes/footer.php"); ?>

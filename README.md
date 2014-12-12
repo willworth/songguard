@@ -17,6 +17,8 @@ Delete?
 user accounts
 validation
 
+if click on artist, do sql select * from songs where artist = x
+
 redirect for add page
 
 <form action='item.php' method='POST' id='form'>
