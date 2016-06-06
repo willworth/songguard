@@ -2,7 +2,7 @@ Song Guard is a simple CRUD app to store your lyrics, notes, and musical ideas.
 I'm an amateur programmer, so this is offered as is, but if you have any requests,
 bug reports, or would like to contribute, please do get in touch via my github page
 or
-will@willworth.co.uk
+code@willworth.co.uk
 
 
 
